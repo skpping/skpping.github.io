@@ -21,15 +21,15 @@ $(function() {
   });
 
   // Keyboard shortcuts-快捷键
-  $("body").keyup(function(e) {
-    if (e.keyCode == 39) {
-      // Key right
-      goToNext();
-    } else if (e.keyCode == 37) {
-      // Key left
-      goToPrev();
-    }
-  });
+  // $("body").keyup(function(e) {
+  //   if (e.keyCode == 39) {
+  //     // Key right
+  //     goToNext();
+  //   } else if (e.keyCode == 37) {
+  //     // Key left
+  //     goToPrev();
+  //   }
+  // });
 
   function goToNext() {
     // Exit if there are no more spinners
