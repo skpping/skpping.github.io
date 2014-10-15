@@ -1,5 +1,6 @@
 $(function() {
   
+  // 点击点点翻页
   $(".pagination a").click(function(e){
     e.preventDefault();
     // Remove the selected class from the currently selected indicator(取消事件的默认动作。)
@@ -10,6 +11,7 @@ $(function() {
     updateSlideshowForSelectedPage();
   });
   
+  // 点击箭头翻页
   $("#next").click(function(e) {
     goToNext();
   });
@@ -31,26 +33,44 @@ $(function() {
 
   function goToNext() {
     // Exit if there are no more spinners
-    if ($(".pagination .selected").parent().index()+1 >= $(".pagination li").length)
-      return;
+    if ($(".pagination .selected").parent().index()+1 >= $(".pagination li").length){
+        
+        $(".pagination .selected")
+          .removeClass("selected")
+          .parent().siblings().eq(0).find("a").addClass("selected");
+        
+        updateSlideshowForSelectedPage();
 
-    $(".pagination .selected")
-      .removeClass("selected")
-      .parent().next().find("a").addClass("selected");
-    
-    updateSlideshowForSelectedPage();
+    }else{
+
+        $(".pagination .selected")
+          .removeClass("selected")
+          .parent().next().find("a").addClass("selected");
+        
+        updateSlideshowForSelectedPage();
+    }
+
   }
   
   function goToPrev() {
     // Exit if the currently selected spinner is the first one
-    if ($(".pagination .selected").parent().index() <= 0)
-      return;
+    if ($(".pagination .selected").parent().index() <= 0){
+        
+        $(".pagination .selected")
+          .removeClass("selected")
+          .parent().siblings().eq(7).find("a").addClass("selected");
+        
+        updateSlideshowForSelectedPage();
 
-    $(".pagination .selected")
-      .removeClass("selected")
-      .parent().prev().find("a").addClass("selected");
-    
-    updateSlideshowForSelectedPage();
+    }else{
+
+        $(".pagination .selected")
+          .removeClass("selected")
+          .parent().prev().find("a").addClass("selected");
+        
+        updateSlideshowForSelectedPage();
+    }
+
   }
   
   function updateSlideshowForSelectedPage() {
@@ -61,5 +81,22 @@ $(function() {
     $("#spinners .selected").removeClass("selected");
     $("#spinners li:nth-child(" + classIndex + ")").addClass("selected");
   }
+
+
+  // 开始自动滚动
+
+  var isAutoPlay = true;
+
+  autoPlay = function() {
+    var self = arguments.callee;
+    setTimeout(function() {
+      if(isAutoPlay) {
+        goToNext();
+      }
+      self();
+    }, 10500);
+  };
+
+  autoPlay();
 	
 });
