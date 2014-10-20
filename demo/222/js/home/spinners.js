@@ -1,6 +1,8 @@
 $(function() {
-  
-  $('#loading').hide();
+  setTimeout('load()',5000);
+  function load(){
+    $('#loading').hide();
+  }
   // 为判断IE浏览器定义
   var browser = navigator.appName,
       b_version = navigator.appVersion,
