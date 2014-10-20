@@ -1,7 +1,7 @@
 $(function() {
 
   setTimeout(function() {
-    $('#loading').fadeOut('slow');
+    $('#loading').hide();
   }, 5000);
   // 为判断IE浏览器定义
   var browser = navigator.appName,
