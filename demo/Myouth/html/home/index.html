@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=1280">
-	<meta name="keywords" content="Myouth, 微主页, 校园生活平台">
+	<meta name="keywords" content="Myouth, 校园活动, 社团动态, 校园资讯">
 	<meta name="description" content="Myouth新鲜校园生活平台，热门活动、最新活动一网打尽；支持查看热点活动、智能分类筛选，快速搜索定位；丰富的社区板块，评论与回复,把你我他连接在一起；一键报名，一键收藏，活动前一天自动发来通知，再也不会错过任何活动；轻敲键盘，一键发布；轻松的活动管理；微主页活动动态展示、资讯动态、留言板，把社团影响力量化。丰富的校园生活从Myouth开始">
 
 	<title>Myouth</title>
@@ -18,11 +18,32 @@
 	
   <script src="../../js/jquery-1.11.1.min.js"></script>
   <script>
-    function load(){
-      $('#loading').hide();
-    }
+  window.onload = function() { 
+
+    $('#loading').hide();
+
+    setTimeout(function() {  
+        // XHR to request a JS and a CSS  
+        // var xhr = new XMLHttpRequest();  
+        // xhr.open('GET', 'http://domain.tld/preload.js');  
+        // xhr.send('');  
+        // xhr = new XMLHttpRequest();  
+        // xhr.open('GET', 'http://domain.tld/preload.css');  
+        // xhr.send('');  
+        // preload image  
+        new Image().src = "../../img/home/active1_bg.jpg";  
+        new Image().src = "../../img/home/active2_bg.jpg";  
+        new Image().src = "../../img/home/active3_bg.jpg";  
+        new Image().src = "../../img/home/active4_bg.jpg";  
+        new Image().src = "../../img/home/active5_bg.jpg";  
+        new Image().src = "../../img/home/active6_bg.jpg";  
+        new Image().src = "../../img/home/active7_bg.jpg";  
+        new Image().src = "../../img/home/active8_bg.jpg";  
+        new Image().src = "../../img/home/active9_bg.jpg";  
+    }, 1000);  
+};
   </script>
-	<script type="text/javascript" src="../../js/home/spinners.js"></script>
+	<script type="text/javascript" src="../../js/home/spinners_back.js"></script>
 
   <!--[if lt IE 9]>
   <script src="../../js/html5.js"></script>
@@ -48,7 +69,7 @@
 
 </head>
 
-<body class="active1" onload="load()">
+<body class="active1">
   <div id="loading">
       <div id="loading-plane"></div>
   </div>
