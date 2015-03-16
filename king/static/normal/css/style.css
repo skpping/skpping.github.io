@@ -896,7 +896,7 @@ input {
 
 }
 
-@media all and (max-width:640px) and (orientation:landscape), all and (max-width:640px) and (orientation:portrait){
+@media all and (max-width:640px){
 	.footer {
 		overflow: auto;
 		height: auto;
@@ -920,7 +920,7 @@ input {
 	}
 }
 
-@media all and (max-width:410px) and (orientation:landscape), all and (max-width:410) and (orientation:portrait){
+@media all and (max-width:410px){
 	.home-page .mobile-download-links .iphone-link,.home-page .mobile-download-links .android-link {
 		font-size: 13px;
 		padding-right: 8px;
@@ -932,7 +932,7 @@ input {
 	}
 }
 
-@media all and (max-width:320px) and (orientation:landscape), all and (max-width:320px) and (orientation:portrait) {
+@media all and (max-width:320px) {
 	.footer ul {
 		text-align: left;
 		width: 320px
