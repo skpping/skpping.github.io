@@ -790,7 +790,7 @@ input {
 	.home-page .section-theme-odd,
 	.home-page .section-theme-even{
 		height: auto;
-		padding: 6% 15%;
+		padding: 6% 10%;
 		max-height: 25rem;
 		max-height: 100vw;
 		-webkit-box-sizing: border-box;
@@ -819,7 +819,7 @@ input {
 	}
 
 	.home-page .theme-pic-intro-title{
-		width: 72%;
+		width: 82%;
 		height: 10%;
 	}
 
@@ -828,7 +828,7 @@ input {
 	}
 
 	.home-page .intro3-title{
-		width: 82%;
+		width: 92%;
 	}
 
 	.home-page .theme-intro-text{
