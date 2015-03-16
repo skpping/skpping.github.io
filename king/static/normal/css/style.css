@@ -801,7 +801,7 @@ input {
 		display: block;
 		left: auto;
 		right: auto;
-		max-height: 380px;
+		height: 380px;
 		padding-top: 0;
 	}
 
