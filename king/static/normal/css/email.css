@@ -1,0 +1,63 @@
+
+@charset "utf-8";
+/* CSS Document */
+*{
+    padding:0px;
+    margin:0px;
+}
+.send_email{
+    width:100%;
+}
+.send_email .banner{
+    width:100%;
+    height:76px;
+    background:repeat-x url('../images/psw_bg.png');
+    padding-left:10px;
+}
+.send_email .img{
+    height:50px;
+    padding-top:13px;
+}
+.send_email .text{
+    height:30px;
+    font-size:12px;
+    font-weight:600;
+    background:#ccc;
+    line-height:30px;
+    padding-left:10px;
+}
+.send_email .text span{
+    font-size:12px;
+    font-weight:100;
+    color:#386601;
+}
+
+.send_email .content{
+    padding-left:10px;
+    padding-top:20px;
+}
+.send_email .content p {
+    height:30px;
+}
+.send_email .content p.button{
+    padding-top:20px;
+}
+.send_email .content input{
+    padding:3px;
+    height:24px;
+}
+.send_email .content .repeat{
+    padding-top:10px;
+}
+.send_email .success{
+    text-align: center;
+    padding-top:200px;
+    padding-bottom:150px;
+    font-size:30px;
+}
+.send_email .footer{
+    height:30px;
+    line-height:30px;
+    font-size:12px;
+    text-align:center;
+}
